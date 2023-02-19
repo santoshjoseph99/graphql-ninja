@@ -70,6 +70,7 @@ const createData = async () => {
       name: 'John Doe',
       username: 'john1',
       password: 'test',
+      photo: 'https://res.cloudinary.com/dzqkqzjxw/image/upload/v1600000000/Cloudinary%2a',
       cars: [
         {
           make: 'Toyota',
@@ -93,6 +94,7 @@ const createData = async () => {
       name: 'John Doe2',
       username: 'john2',
       password: 'test',
+      photo: 'https://res.cloudinary.com/dzqkqzjxw/image/upload/v1600000000/Cloudinary%2a',
       cars: [
         {
           make: 'Toyota',

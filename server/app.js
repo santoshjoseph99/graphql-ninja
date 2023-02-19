@@ -2,6 +2,7 @@ require('dotenv').config(); //process.env.JWT_SECRET
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const cloundinary = require('cloudinary');
+const routes = require('./routes');
 
 const app = express();
 const {ApolloServer} = require('apollo-server-express');
@@ -41,6 +42,10 @@ async function main() {
       // me: {...db.User.findOne({where: {id: 1}})},
     }),
   });
+
+  app.set('view engine', 'pug');
+  app.set('views', `${__dirname}/public`);
+  app.get('/', routes.index);
 
   app.use(cors());
   await server.start();

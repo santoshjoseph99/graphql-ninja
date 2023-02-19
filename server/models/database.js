@@ -46,6 +46,7 @@ User.init(
     },
     photo: {
       type: DataTypes.STRING,
+      allowNull: true,
     },
   },
   {sequelize, modelName: 'user'}
